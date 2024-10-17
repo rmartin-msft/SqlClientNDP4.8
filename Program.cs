@@ -1,8 +1,9 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Configuration;
+using System.Data.Common;
 
-namespace SlqClientNDP4._8
+namespace SqlClientNDP4_8
 {
     internal class Program
     {
@@ -17,10 +18,12 @@ namespace SlqClientNDP4._8
 
             Console.WriteLine(connectionString);
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                conn.Open();
-            }
+            // https://www.nuget.org/packages/Microsoft.EntityFramework.SqlServer/
+
+            //using (SqlConnection conn = new SqlConnection(connectionString))
+            //{
+            //    conn.Open();
+            //}
         }
     }
 }
