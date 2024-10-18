@@ -198,6 +198,7 @@
       <DependentUpon>MetalModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="README.MD" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetalModel.Context.tt">
